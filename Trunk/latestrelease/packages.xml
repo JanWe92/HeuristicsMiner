@@ -1,0 +1,11 @@
+
+				<packages>
+					<package name="HeuristicsMiner" version="6.5.49" os="all" url="http://www.promtools.org/prom6/packages/HeuristicsMiner/HeuristicsMiner-6.5.49-all.zip" desc="HeuristicsMiner" org="Eindhoven University of Technology" license="L-GPL" author="J. Ribeiro" auto="false" hasPlugins="true" logo="http://www.promtools.org/prom6/packages/prom_subtitle_hat_300.png">
+			       <dependency org="prom" name="Flex" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Log" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="PetriNets" rev="latest" changing="true" transitive="true" />
+       <dependency org="prom" name="Widgets" rev="latest" changing="true" transitive="true" />
+
+					</package>
+				</packages>
+			

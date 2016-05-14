@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="libs-external">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Trunk/tests/libs-external/mockito-all-1.9.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trunk/tests/libs-external/junit-4.8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trunk/tests/libs-external/cobertura.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trunk/tests/libs-external/cobertura-2.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

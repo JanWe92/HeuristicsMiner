@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="latestrelease">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Trunk/latestrelease/HeuristicsMiner-6.5.21-all.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Trunk/latestrelease/HeuristicsMiner-6.5.44-all.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Trunk/latestrelease/HeuristicsMiner-6.5.19-all.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Trunk/latestrelease/HeuristicsMiner-6.5.22-all.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Trunk/latestrelease/HeuristicsMiner-6.5.30-all.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Trunk/latestrelease/HeuristicsMiner-6.5.41-all.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Trunk/latestrelease/HeuristicsMiner-6.5.17-all.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Trunk/latestrelease/HeuristicsMiner.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Trunk/latestrelease/HeuristicsMiner-6.5.24-all.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Trunk/latestrelease/HeuristicsMiner-6.5.49-all.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Trunk/latestrelease/HeuristicsMiner-6.5.15-all.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
