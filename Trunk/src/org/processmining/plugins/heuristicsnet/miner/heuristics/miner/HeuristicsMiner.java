@@ -40,6 +40,8 @@ public class HeuristicsMiner {
 
 	protected HeuristicsMinerSettings settings;
 
+	private SimpleHeuristicsNet SimpleNet;
+
 	//	private HeuristicsMinerGUI ui = null;
 
 	//-------------------------------------------------------------------------
@@ -80,19 +82,19 @@ public class HeuristicsMiner {
 
 	public HeuristicsNet mine() {
 
-		context.getProgress().setMaximum(0);
-		context.getProgress().setMaximum(10);
-		context.getProgress().setCaption("Mining the HeuristicsNet...");
-		context.getProgress().setIndeterminate(false);
+		//context.getProgress().setMaximum(0);
+		//context.getProgress().setMaximum(10);
+		//context.getProgress().setCaption("Mining the HeuristicsNet...");
+		//context.getProgress().setIndeterminate(false);
 
 		long startTime = (new Date()).getTime();
 
 		//----------------------
 
 		this.keys = new HashMap<String, Integer>();
-		
+
 		System.out.println(logInfo.getEventClasses());
-		
+
 		for (XEventClass event : logInfo.getEventClasses(settings.getClassifier()).getClasses()) {
 
 			this.keys.put(event.getId(), event.getIndex());
@@ -100,23 +102,33 @@ public class HeuristicsMiner {
 
 		activitiesMappingStructures = new ActivitiesMappingStructures(logInfo.getEventClasses(settings.getClassifier()));
 
-		SimpleHeuristicsNet net = new SimpleHeuristicsNet(makeBasicRelations(metrics), metrics, settings);
+		SimpleNet = new SimpleHeuristicsNet(makeBasicRelations(metrics), metrics, settings);
 
 		metrics.printData();
 
 		//----------------------
 
-		System.out.println(net.toString() + "\n");
+		System.out.println(SimpleNet.toString() + "\n");
 		System.out.println(this.settings.toString());
 
 		long finishTime = (new Date()).getTime();
 
 		System.out.println(("\nMining Time: " + (finishTime - startTime) / 1000.0));
 
-		return net;
+		return SimpleNet;
 	}
 
-	private HeuristicsNet makeBasicRelations(HeuristicsMetrics metrics) {
+	public String getSimpleNet()
+	{
+		return SimpleNet.toString();
+	}
+
+	public HeuristicsMetrics getMetrics()
+	{
+		return SimpleNet.getMetrics();
+	}
+
+	public HeuristicsNet makeBasicRelations(HeuristicsMetrics metrics) {
 		
 		if (this.log.size() <= 0) {
 			return new HeuristicsNetImpl(activitiesMappingStructures);
